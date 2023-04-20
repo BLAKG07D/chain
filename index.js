@@ -13,7 +13,7 @@ const client = new Client({
 })
 
 client.once("ready", () => {
-    console.log('xLOUD-9 is Ready...')
+    console.log('xLOUD-9 is Ready... to start listening for requests')
 })
 client.on("messageCreate", (message) => {
     console.log(message)
