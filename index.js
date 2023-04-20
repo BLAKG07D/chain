@@ -16,7 +16,8 @@ client.once("ready", () => {
     console.log('xLOUD-9 is Ready... to start listening for requests')
 })
 client.on("messageCreate", (message) => {
-    console.log(message)
-    message.reply(message)
+    message.content == "hello"?message.reply("hello to you"):"no one talks to me"
+        
+    
 })
 client.login(process.env.BOT_TOKEN);
