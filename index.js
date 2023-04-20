@@ -17,5 +17,6 @@ client.once("ready", () => {
 })
 client.on("messageCreate", (message) => {
     console.log(message)
+    message.reply(message)
 })
 client.login(process.env.BOT_TOKEN);
